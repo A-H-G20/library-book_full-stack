@@ -7,13 +7,12 @@ if (!isset($_SESSION['id']) || trim($_SESSION['id']) == '') {
     exit();
 }
 
-// Store the session ID for use
 $session_id = $_SESSION['id'];
 
 require 'connection.php'; // Database connection
 
 // Fetch books with title, image, copies, price, and description from the database
-$query = "SELECT title, image, copies_available, price, description FROM books";
+$query = "SELECT id, title, image, copies_available, price, description FROM books";
 $result = mysqli_query($conn, $query);
 
 if (!$result) {
@@ -30,30 +29,31 @@ if (!$result) {
     <title>Books</title>
   </head>
   <body>
-    <!-- Header section -->
     <header class="header-bar">
       <nav>
         <ul>
           <li><a href="dashboard.php">Home</a></li>
           <li><a href="Reserved_Books.html">Reserved Books</a></li>
           <li><a href="change_password.html">Settings</a></li>
-          <li><a href="logout.php">Logout</a></li> <!-- Logout functionality -->
+          <li><a href="logout.php">Logout</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Main content for displaying books -->
     <form action="">
       <div class="products-container">
         <?php while ($book = mysqli_fetch_assoc($result)) { ?>
           <div id="products">
-            <img src="admin/image/<?php echo htmlspecialchars($book['image']); ?>" alt="Book Image" />
-            <div>
-              <label for=""><?php echo htmlspecialchars($book['title']); ?></label><br /><br>
-              <label for="count">Copies: <?php echo htmlspecialchars($book['copies_available']); ?></label><br /><br>
-              <label for="price">Price: $<?php echo htmlspecialchars($book['price']); ?></label><br />
-            
-            </div>
+         <!-- Link to book details -->
+              <img src="admin/image/<?php echo htmlspecialchars($book['image']); ?>" alt="Book Image" />
+              <div>
+                <label for=""><?php echo htmlspecialchars($book['title']); ?></label><br />
+                <label for="count">Copies: <?php echo htmlspecialchars($book['copies_available']); ?></label><br />
+                <label for="price">Price: $<?php echo htmlspecialchars($book['price']); ?></label><br /><br><b></b>
+                <button onclick="window.location.href='book_details.php?id=<?php echo $book['id']; ?>'">View Details</button>
+
+              </div><br><br>
+             
           </div>
         <?php } ?>
       </div>

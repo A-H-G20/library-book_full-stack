@@ -1,9 +1,9 @@
-/* CSS for dashboard page */
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -14,24 +14,12 @@ body {
   align-items: center;
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-table {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 header {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
   width: 100%;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,58 +50,96 @@ nav a:hover {
   border-radius: 5px;
 }
 
-form {
-  margin-top: 2rem;
-  width: 90%;
-  max-width: 1200px;
+.nav-menu {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* Container for products, using Flexbox */
+.nav-menu option {
+  background-color: #2991ff;
+  color: white;
+}
+
+.nav-menu:focus {
+  outline: none;
+  background-color: #2991ff;
+}
+
+/* Product Grid */
 .products-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
+/* Product Card */
 #products {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: white;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  flex-basis: calc(33% - 1rem); /* Each product takes 1/3rd of the row */
-  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 #products img {
-  width: 150px;
-  height: 200px;
+  width: 250px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 5px;
-  margin-right: 1rem;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 #products label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555;
+  margin-bottom: 10px;
 }
 
 #products:hover {
-  background-color: #ffecd0;
-  transition: background-color 0.3s ease;
+  transform: scale(1.05);
+  background-color: #f0f8ff;
 }
 
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   #products {
-    flex-basis: calc(50% - 1rem); /* In smaller screens, two products per row */
+    width: 45%; /* Two items per row on medium screens */
   }
 }
 
 @media (max-width: 500px) {
   #products {
-    flex-basis: 100%; /* In smallest screens, one product per row */
+    width: 100%; /* One item per row on small screens */
   }
 }
