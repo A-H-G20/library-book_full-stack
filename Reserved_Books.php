@@ -68,11 +68,11 @@ if (isset($_POST['delete_id'])) {
                 <div id="products">
                     <img src="admin/image/<?php echo htmlspecialchars($reserved['image']); ?>" alt="Book Image" />
                     <div>
-                        <h2><?php echo htmlspecialchars($reserved['title']); ?></h2><br>
-                        <p>Date From: <?php echo htmlspecialchars($reserved['date_from']); ?></p><br>
-                        <p>Date To: <?php echo htmlspecialchars($reserved['date_to']); ?></p><br>
-                        <p>Status: <?php echo htmlspecialchars($reserved['status']); ?></p><br>
-                        <p>Price: $<?php echo htmlspecialchars($reserved['price']); ?></p>
+                        <label for=""style="font-weight: bold; color: black"><?php echo htmlspecialchars($reserved['title']); ?></label><br><br>
+                        <label for="">Date From: <?php echo htmlspecialchars($reserved['date_from']); ?></label><br><br>
+                        <label for="">Date To: <?php echo htmlspecialchars($reserved['date_to']); ?></label><br><br>
+                        <label for="">Status: <?php echo htmlspecialchars($reserved['status']); ?></label><br><br>
+                        <label for="">Price: $<?php echo htmlspecialchars($reserved['price']); ?></label><br>
                         <!-- Delete Button Form -->
                         <form action="" method="post" style="display:inline;">
                             <input type="hidden" name="delete_id" value="<?php echo htmlspecialchars($reserved['id']); ?>">

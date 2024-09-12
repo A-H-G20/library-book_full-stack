@@ -47,7 +47,8 @@ if (!$result) {
          <!-- Link to book details -->
               <img src="admin/image/<?php echo htmlspecialchars($book['image']); ?>" alt="Book Image" />
               <div>
-                <label for=""><?php echo htmlspecialchars($book['title']); ?></label><br /><br>
+              <label for="" style="font-weight: bold; color:black"><?php echo htmlspecialchars($book['title']); ?></label><br /><br>
+
                 <label for="count">Copies: <?php echo htmlspecialchars($book['copies_available']); ?></label><br /><br>
                 <label for="price">Price: $<?php echo htmlspecialchars($book['price']); ?></label><br /><br><b></b>
                 <a href="book_details.php?id=<?php echo $book['id']; ?>" class="button-link">View Details</a>

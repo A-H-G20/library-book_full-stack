@@ -98,12 +98,12 @@ header {
   
       nav {
         width: 100%;
-        color: #727272;
+        color: #007bff;
         text-transform: uppercase;
         padding: 10px;
-        border-bottom: 2px solid rgb(120, 46, 17);
+        border-bottom: 2px solid black;
         font-size: 12px;
-        background-color: rgba(190, 189, 189, 0.8);
+        background-color: #007bff;
         img {
           width: 20px;
           height: 20px;
@@ -111,7 +111,7 @@ header {
           margin-right: 30px;
           &:hover {
             transform: scale(1.1);
-            background-color: rgba(169, 167, 167, 0.9);
+            background-color:#97c5f6;
             border-radius: 5px;
           }
         }
@@ -125,7 +125,7 @@ header {
   
   
   img {
-      max-height: 250px;
+      max-height: 400px;
       max-width: 100%; /* Ensures the image doesn't exceed the container's width */
       width: auto;
       height: auto;
@@ -137,7 +137,7 @@ header {
       padding: 50px;
       float: left;
       width: 55%;
-      border-left: 2px solid rgb(120, 46, 17);
+      border-left: 2px solid black;
   
       h1 {
         color: #515151;
@@ -149,51 +149,7 @@ header {
         font-weight: 300;
         margin-bottom: 30px;
       }
-      .quantity-box {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        margin-top: 50px;
-      }
-  
-      .quantity-input {
-        width: 50px;
-        height: 30px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        text-align: center;
-      }
-  
-      .quantity-arrow {
-        position: relative;
-        display: inline-block;
-        margin-left: 10px;
-      }
-  
-      .quantity-arrow i {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-      }
-  
-      .quantity-arrow i:first-child {
-        left: 0;
-      }
-  
-      .quantity-arrow i:last-child {
-        right: 0;
-      }
-  
-      .quantity-arrow i:hover {
-        color: #666;
-      }
-  
-      .quantity-arrow i:active {
-        transform: translateY(-50%) scale(0.9);
-      }
+   
       h2 {
         color: #515151;
         margin: 0px;
@@ -215,12 +171,12 @@ header {
         padding: 10px 20px;
         border: none;
         border-radius: 10px;
-        background-color: rgb(156, 49, 6);
+        background-color: #007bff;
         color: #fafafa;
         cursor: pointer;
         margin-top: 0; /* Remove the margin top */
         &:hover {
-          background-color: rgb(120, 46, 17);
+          background-color: #97c5f6;
           border-radius: 15px;
         }
       }
