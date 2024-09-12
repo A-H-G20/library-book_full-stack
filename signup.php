@@ -53,3 +53,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <title>Signup page</title>
+  </head>
+  <body>
+    <form action="" method="POST">
+      <div class="logo" id="logo">
+        <img src="image/logo.png" alt="logo" />
+      </div>
+      <div class="mssg" id="mssg">
+        <h1>Register now</h1>
+      </div>
+      <div class="frm" id="frm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" required />
+      </div>
+      <div id="sbmt" class="sbmt">
+        <button type="submit">Signup</button>
+      </div>
+      <div id="sing">
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </form>
+  </body>
+</html>
