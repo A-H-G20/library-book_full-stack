@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $username;
 
             // Redirect to the dashboard or home page
-            header('Location: ../dashboard.html');
+            header('Location: dashboard.php');
             exit();
         } else {
             echo "Error: " . mysqli_error($conn);

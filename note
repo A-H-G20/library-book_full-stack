@@ -1,0 +1,3 @@
+ <div>
+        <p>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p> <!-- Display logged-in user's name -->
+      </div>
