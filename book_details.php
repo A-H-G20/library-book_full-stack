@@ -67,10 +67,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <header class="header-bar">
     <nav>
         <ul>
-            <li><a href="dashboard.php">Home</a></li>
-            <li><a href="Reserved_Books.html">Reserved Books</a></li>
-            <li><a href="change_password.html">Settings</a></li>
-            <li><a href="logout.php">Logout</a></li>
+        <li><a href="dashboard.php">Home</a></li>
+          <li><a href="Reserved_Books.php">Reserved Books</a></li>
+          <li><a href="change_password.php">Settings</a></li>
+          <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
 </header>

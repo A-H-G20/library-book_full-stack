@@ -51,28 +51,41 @@ if (isset($_POST['submit1'])) {
 // Close the connection
 mysqli_close($conn);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>login page</title>
+</head>
+<body>
+    
 
-<div class="alert alert-info">Please Enter The Details Below</div>
-<div class="login_terry">
-    <form method="post" class="form-horizontal">
-        <div class="control-group">
-            <label class="control-label" for="inputEmail">Email</label>
-            <div class="controls">
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
+
+    <form method="post">
+    <div class="logo" id="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+      <div class="mssg" id="mssg">
+        <h1>Welcome Back</h1>
+      </div>
+      <div class="frm" id="frm">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </div>
+        <div class="sbmt" id="sbmt">
+            <button name="submit1" type="submit">
+                Login
+            </button>
         </div>
-        <div class="control-group">
-            <label class="control-label" for="inputPassword">Password</label>
-            <div class="controls">
-                <input type="password" name="password" placeholder="Password" required>
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <button name="submit1" type="submit" class="btn btn-info">
-                    <i class="icon-signin icon-large"></i>&nbsp;Login
-                </button>
-            </div>
-        </div>
+        <div id="sing">
+        <p>Already have an account? <a href="signup.php">Login here</a></p>
+      </div>
     </form>
-</div>
+
+</body>
+</html>

@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <body>
     <form action="" method="POST">
       <div class="logo" id="logo">
-        <img src="image/logo.png" alt="logo" />
+        <img src="images/logo.png" alt="logo" />
       </div>
       <div class="mssg" id="mssg">
         <h1>Register now</h1>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <button type="submit">Signup</button>
       </div>
       <div id="sing">
-        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <p>Already have an account? <a href="login.php">Login here</a></p>
       </div>
     </form>
   </body>
