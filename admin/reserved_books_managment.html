@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reserved_books_managment.css" />
+    <title>Reserved Books Management</title>
+  </head>
+  <body>
+    <header class="header-bar">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <select class="nav-menu" id="management-select">
+            <option selected disabled>Application Management</option>
+            <option value="user_managment.html">User Managment</option>
+            <option value="book_managment.html">Book Managment</option>
+            <option value="reserved_books_managment.html">
+              Reserved Books Managment
+            </option>
+          </select>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="main-content">
+        <section class="book-list">
+          <h2>Reserved Books</h2>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Book Name</th>
+                <th>User Name</th>
+                <th>Reservation Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="reservedBooksTableBody">
+              <!-- Example rows -->
+              <tr>
+                <td>1</td>
+                <td>Pride and Prejudice</td>
+                <td>Ahmad</td>
+                <td>2024-09-10</td>
+                <td>Reserved</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Wuthering Heights</td>
+                <td>Raghad</td>
+                <td>2024-09-9</td>
+                <td>Cancelled</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="form-container">
+          <h2>Add Reservation</h2>
+          <br />
+          <form>
+            <div class="form-group">
+              <label for="book-name">Name:</label>
+              <select id="book-name" name="book">
+                <option value="the-great-gatsby">The Great Gatsby</option>
+                <option value="in-search-of-lost-time">
+                  In Search of Lost Time
+                </option>
+                <option value="ulysses">Ulysses</option>
+                <option value="middlemarch">Middlemarch</option>
+                <option value="the-catcher-in-the-rye">
+                  The Catcher in the Rye
+                </option>
+                <option value="anna-karenina">Anna Karenina</option>
+                <option value="nineteen-eighty-four">
+                  Nineteen Eighty Four
+                </option>
+                <option value="moby-dick">Moby-Dick</option>
+                <option value="don-quixote">Don Quixote</option>
+                <option value="wuthering-heights">Wuthering Heights</option>
+                <option value="pride-and-prejudice">Pride and Prejudice</option>
+                <option value="crime-and-punishment">
+                  Crime and Punishment
+                </option>
+                <option value="war-and-peace">War and Peace</option>
+                <option value="the-stranger">The Stranger</option>
+                <option value="madame-bovary">Madame Bovary</option>
+                <option value="the-odyssey">The Odyssey</option>
+                <option value="the-bible">The Bible</option>
+                <option value="the-divine-comedy">The Divine Comedy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="user-name">User Name</label>
+              <select id="user-select" name="user">
+                <option value="nour">Nour</option>
+                <option value="ibrahim">Ibrahim</option>
+                <option value="avin">Avin</option>
+                <option value="amjad">Amjad</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reservation-date">Reservation Date</label>
+              <input type="date" id="reservation-date" required />
+            </div>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select id="status" required>
+                <option value="Reserved">Reserved</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Save</button>
+              <button type="button" class="cancel-button">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="edit-form-container" style="display: none">
+          <h2>Edit Reservation</h2>
+          <br />
+          <form>
+            <div class="form-group">
+              <label for="book-select">Name:</label>
+              <select id="book-select" name="book">
+                <option value="the-great-gatsby">The Great Gatsby</option>
+                <option value="in-search-of-lost-time">
+                  In Search of Lost Time
+                </option>
+                <option value="ulysses">Ulysses</option>
+                <option value="middlemarch">Middlemarch</option>
+                <option value="the-catcher-in-the-rye">
+                  The Catcher in the Rye
+                </option>
+                <option value="anna-karenina">Anna Karenina</option>
+                <option value="nineteen-eighty-four">
+                  Nineteen Eighty Four
+                </option>
+                <option value="moby-dick">Moby-Dick</option>
+                <option value="don-quixote">Don Quixote</option>
+                <option value="wuthering-heights">Wuthering Heights</option>
+                <option value="pride-and-prejudice">Pride and Prejudice</option>
+                <option value="crime-and-punishment">
+                  Crime and Punishment
+                </option>
+                <option value="war-and-peace">War and Peace</option>
+                <option value="the-stranger">The Stranger</option>
+                <option value="madame-bovary">Madame Bovary</option>
+                <option value="the-odyssey">The Odyssey</option>
+                <option value="the-bible">The Bible</option>
+                <option value="the-divine-comedy">The Divine Comedy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="edit-user-name">User Name</label>
+              <select id="user-select" name="user">
+                <option value="nour">Nour</option>
+                <option value="ibrahim">Ibrahim</option>
+                <option value="avin">Avin</option>
+                <option value="amjad">Amjad</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="edit-reservation-date">Reservation Date</label>
+              <input type="date" id="edit-reservation-date" required />
+            </div>
+            <div class="form-group">
+              <label for="edit-status">Status</label>
+              <select id="edit-status" required>
+                <option value="Reserved">Reserved</option>
+                <option value="Cancelled">Cancelled</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Save</button>
+              <button type="button" class="edit-cancel-button">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/reserved_books_managment.js"></script>
+  </body>
+</html>

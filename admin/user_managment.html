@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user_managment.css">
+    <title>Document</title>
+</head>
+<body>
+  <header class="header-bar">
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <select class="nav-menu" id="management-select">
+          <option selected disabled>Application Management</option>
+          <option value="user_managment.html">User Managment</option>
+          <option value="book_managment.html">Book Managment</option>
+          <option value="reserved_books_managment.html">
+            Reserved Books Managment
+          </option>
+        </select>
+        <li><a href="../login.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="main-content">
+         
+  
+          <section class="user-list">
+            <h2>Users</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Example rows, you can replace with dynamic content -->
+                <tbody id="adminsTableBody">
+                    <tr>
+                      <td>1</td>
+                      <td>Ahmad</td>
+                      <td>Ahmad@gmail.com</td>
+                      <td>Admin</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Raghad</td>
+                      <td>Raghad@gmail.com</td>
+                      <td>Admin</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>nour</td>
+                      <td>nour@gmail.com</td>
+                      <td>User</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>ibrahim</td>
+                      <td>ibrahim@gmail.com</td>
+                      <td>User</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Avin</td>
+                      <td>avin@gmail.com</td>
+                      <td>User</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Amjad</td>
+                      <td>amjad@gmail.com</td>
+                      <td>User</td>
+                      <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                  
+            </table>
+          </section>
+          
+          <div class="container form-container">
+            <h1>Edit user</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" required>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Edit</button>
+                    <button type="button" class="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+        
+      </div>
+      <script src="../js/user_managment.js"></script>
+</body>
+</html>
+
+    

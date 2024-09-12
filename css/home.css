@@ -1,0 +1,133 @@
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  width: 98%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #2991ff;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-menu option {
+  background-color: #2991ff;
+  color: white;
+}
+
+.nav-menu:focus {
+  outline: none;
+  background-color: #2991ff;
+}
+form {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Container for products, using Flexbox */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-basis: calc(33% - 1rem); /* Each product takes 1/3rd of the row */
+  box-sizing: border-box;
+}
+
+#products img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+#products label {
+  font-size: 1rem;
+  color: #555;
+}
+
+#products:hover {
+  background-color: #ffecd0;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  #products {
+    flex-basis: calc(50% - 1rem); /* In smaller screens, two products per row */
+  }
+}
+
+@media (max-width: 500px) {
+  #products {
+    flex-basis: 100%; /* In smallest screens, one product per row */
+  }
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/book_managment.css" />
+    <title>Book Management</title>
+  </head>
+  <body>
+    <header class="header-bar">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <select class="nav-menu" id="management-select">
+            <option selected disabled>Application Management</option>
+            <option value="user_managment.html">User Managment</option>
+            <option value="book_managment.html">Book Managment</option>
+            <option value="reserved_books_managment.html">
+              Reserved Books Managment
+            </option>
+          </select>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="main-content">
+        <section class="book-list">
+          <h2>Books</h2>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Copies</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>The Great Gatsby</td>
+                <td>
+                  <img
+                    src="../image/The Great Gatsby.jpeg"
+                    alt="The Great Gatsby"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>In Search of Lost Time</td>
+                <td>
+                  <img
+                    src="../image/In Search of Lost Time.jpeg"
+                    alt="In Search of Lost Time"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ulysses</td>
+                <td>
+                  <img src="../image/Ulysses.jpeg" alt="Ulysses" width="100" />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Middlemarch</td>
+                <td>
+                  <img
+                    src="../image/Middlemarch.jpeg"
+                    alt="Middlemarch"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>The Catcher in the Rye</td>
+                <td>
+                  <img
+                    src="../image/The Catcher in the Rye.jpeg"
+                    alt="The Catcher in the Rye"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Anna Karenina</td>
+                <td>
+                  <img
+                    src="../image/Anna Karenina.jpeg"
+                    alt="Anna Karenina"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Nineteen Eighty Four</td>
+                <td>
+                  <img
+                    src="../image/Nineteen Eighty Four.jpeg"
+                    alt="Nineteen Eighty Four"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Moby-Dick</td>
+                <td>
+                  <img
+                    src="../image/Moby-Dick.jpeg"
+                    alt="Moby-Dick"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Don Quixote</td>
+                <td>
+                  <img
+                    src="../image/Don Quixote.jpeg"
+                    alt="Don Quixote"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Wuthering Heights</td>
+                <td>
+                  <img
+                    src="../image/Wuthering Heights.jpeg"
+                    alt="Wuthering Heights"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Pride and Prejudice</td>
+                <td>
+                  <img
+                    src="../image/Pride and Prejudice.jpg"
+                    alt="Pride and Prejudice"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Crime and Punishment</td>
+                <td>
+                  <img
+                    src="../image/Crime and Punishment.jpeg"
+                    alt="Crime and Punishment"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>War and Peace</td>
+                <td>
+                  <img
+                    src="../image/War and Peace.jpeg"
+                    alt="War and Peace"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>The Stranger</td>
+                <td>
+                  <img
+                    src="../image/The Stranger.jpeg"
+                    alt="The Stranger"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Madame Bovary</td>
+                <td>
+                  <img
+                    src="../image/Madame Bovary.jpeg"
+                    alt="Madame Bovary"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>The Odyssey</td>
+                <td>
+                  <img
+                    src="../image/The Odyssey.jpeg"
+                    alt="The Odyssey"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>The Bible</td>
+                <td>
+                  <img
+                    src="../image/The Bible.jpeg"
+                    alt="The Bible"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>The Divine Comedy</td>
+                <td>
+                  <img
+                    src="../image/The Divine Comedy.jpeg"
+                    alt="The Divine Comedy"
+                    width="100"
+                  />
+                </td>
+                <td>5 copies</td>
+                <td>
+                  <button class="add-button">Add</button>
+                  <button class="edit-button">Edit</button>
+                  <button class="delete-button">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="form-container">
+          <h2>Add Book</h2>
+          <br />
+          <form>
+            <div class="form-group">
+              <label for="title">Name</label>
+              <input type="text" id="title" required />
+            </div>
+            <div class="form-group">
+              <label for="image">Image</label>
+              <input type="file" id="image" required />
+            </div>
+            <div class="form-group">
+              <label for="copies">Copies count</label>
+              <input type="text" id="copies" required />
+            </div>
+            <div class="form-group">
+              <button type="submit">Add</button>
+              <button type="button" class="cancel-button">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="edit-form-container" style="display: none">
+          <h2>Edit Book</h2>
+          <br />
+          <form>
+            <div class="form-group">
+              <label for="edit-title">Name</label>
+              <input type="text" id="edit-title" required />
+            </div>
+            <div class="form-group">
+              <label for="edit-image">Image</label>
+              <input type="file" id="edit-image" required />
+            </div>
+            <div class="form-group">
+              <label for="edit-copies">Copies count</label>
+              <input type="text" id="edit-copies" required />
+            </div>
+            <div class="form-group">
+              <button type="submit">Edit</button>
+              <button type="button" class="edit-cancel-button">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/book_managment.js"></script>
+  </body>
+</html>
