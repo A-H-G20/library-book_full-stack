@@ -33,7 +33,7 @@ if (!$result) {
       <nav>
         <ul>
           <li><a href="dashboard.php">Home</a></li>
-          <li><a href="Reserved_Books.html">Reserved Books</a></li>
+          <li><a href="Reserved_Books.php">Reserved Books</a></li>
           <li><a href="change_password.html">Settings</a></li>
           <li><a href="logout.php">Logout</a></li>
         </ul>
@@ -47,12 +47,11 @@ if (!$result) {
          <!-- Link to book details -->
               <img src="admin/image/<?php echo htmlspecialchars($book['image']); ?>" alt="Book Image" />
               <div>
-                <label for=""><?php echo htmlspecialchars($book['title']); ?></label><br />
-                <label for="count">Copies: <?php echo htmlspecialchars($book['copies_available']); ?></label><br />
+                <label for=""><?php echo htmlspecialchars($book['title']); ?></label><br /><br>
+                <label for="count">Copies: <?php echo htmlspecialchars($book['copies_available']); ?></label><br /><br>
                 <label for="price">Price: $<?php echo htmlspecialchars($book['price']); ?></label><br /><br><b></b>
-                <button onclick="window.location.href='book_details.php?id=<?php echo $book['id']; ?>'">View Details</button>
-
-              </div><br><br>
+                <a href="book_details.php?id=<?php echo $book['id']; ?>" class="button-link">View Details</a>
+              </div><br>
              
           </div>
         <?php } ?>

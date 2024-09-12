@@ -226,4 +226,35 @@ header {
       }
     }
   }
-  
+  .date-picker-container {
+    margin-top: 20px;
+}
+
+.date-picker-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.date-picker-container input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+.date-picker-container input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.date-picker-container br {
+    display: none; /* Hides line breaks */
+}
