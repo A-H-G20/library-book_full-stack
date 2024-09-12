@@ -7,19 +7,19 @@
     <title>Book Management</title>
   </head>
   <body>
-    <header class="header-bar">
+  <header class="header-bar">
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <select class="nav-menu" id="management-select">
             <option selected disabled>Application Management</option>
-            <option value="user_managment.html">User Managment</option>
-            <option value="book_managment.html">Book Managment</option>
-            <option value="reserved_books_managment.html">
+            <option value="user_managment.php">User Managment</option>
+            <option value="book_managment.php">Book Managment</option>
+            <option value="reserved_books_managment.php">
               Reserved Books Managment
             </option>
           </select>
-          <li><a href="../login.html">Logout</a></li>
+          <li><a href="../login.php">Logout</a></li>
         </ul>
       </nav>
     </header>
@@ -103,6 +103,7 @@
       </div>
     </div>
     <script src="../js/book_managment.js"></script>
+    <script src="../js/managment_selection.js"></script>
   </body>
 </html>
 
